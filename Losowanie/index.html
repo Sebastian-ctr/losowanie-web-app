@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    background-color: transparent;
+    background-image: url("pexels-photo-1245066.jpeg");
+    
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Wylosuj kapłana</title>
+    
+</head>
+<body>
+        
+    <section class="middle">
+        <h1 class="tittle"> 
+            Wylosuj kapłana <br>i pomódl się za niego
+        </h1>
+
+        <p id="demo"
+            class="sub-tittle">
+            <b>Wciśnij "losuj"</b>
+        </p>
+
+        <button class="but"
+            onclick="draw()"
+                >
+            LOSUJ
+        </button>
+
+        
+    </section>
+
+    <script type="text/javascript">
+        var dane = ["Ks. Emil Kurek CSMA",
+            "Ks. Marek Posełkiewicz CSMA",
+            "Ks. Michał Mazur CSMA",
+            "Ks. Bogdan Gospodarczyk CSMA",
+            "Ks. Jan Sereda CSMA",
+            "Ks. Jarosław Witkowski CSMA",
+            "Ks. Józef Kowal CSMA",
+            "Ks. Julian Gądek CSMA",
+            "Ks. proboszcz Kazimierz Joniec CSMA",
+            "Ks. Krystian Rosada CSMA",
+            "Ks. Wojciech Szymański CSMA",
+            "Ks. Kamil Kędzior CSMA",
+            "Ks. Janusz Rzucidło CSMA",
+            "Ks. Zdzisław Urbanik CSMA"
+        ];
+        
+        function draw(){
+            var number = Math.floor(Math.random() * 14);
+            document.getElementById("demo").innerHTML=dane[number];
+        }
+    </script>
+</body>
+</html>
